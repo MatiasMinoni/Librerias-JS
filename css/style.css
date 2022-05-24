@@ -4,6 +4,9 @@ body {
   /* imagen */
   background-image: url(../img/grieta.jpg); }
 
+img {
+  width: 100%; }
+
 .hud {
   display: flex;
   flex-direction: row;
