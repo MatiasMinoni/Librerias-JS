@@ -1,5 +1,4 @@
 
-
 class campeon {
     constructor(nombre, vida, daño){
         this.nombre = nombre;
@@ -219,7 +218,6 @@ localStorage.setItem("campeones", [
 //    var campeonSeleccionado = seleccionarCampeon ? "Ekko" : "Illaoi";
 
 
-
     
  var x = Math.floor(Math.random()*2);
  console.log(x)
@@ -231,10 +229,26 @@ console.log(x || "no toco 0")
 
 
 
-const dt = DateTime.local(2017, 5, 15, 8, 30);
+var DateTime = luxon.DateTime;
+
+
+dt = DateTime.now();
+dt.year     //=> 2017
+dt.month    //=> 9
+dt.day      //=> 14
+dt.second   //=> 47
+dt.weekday  //=> 4
 
 const now = DateTime.now();
-dt = DateTime.fromObject({day: 22, hour: 12 }, { zone: 'America/Los_Angeles', numberingSystem: 'beng'})
-DateTime.fromISO("2017-05-15")          //=> May 15, 2017 at midnight
-DateTime.fromISO("2017-05-15T08:30:00") //=> May 15, 2017 at 8:30
 
+DateTime.now().toString(); //=> '2017-09-14T03:20:34.091-04:00'
+
+var hora = [
+    dt.year,
+    dt.month,
+    dt.day,
+    dt.hour,
+    dt.minute,
+    dt.second,
+]
+console.log(hora)
